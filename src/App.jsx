@@ -25,8 +25,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-200 to-red-300 p-4">
-      <div className="max-w-md mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-200 to-red-300 p-6 md:p-10">
+      <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur rounded-3xl p-6 md:p-10 shadow-lg">
         <Header />
         {renderStep()}
       </div>
