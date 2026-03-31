@@ -14,8 +14,22 @@ export const categories = {
   Grönsaker: [
     { name: "Sallad", price: 5 },
     { name: "Tomat", price: 5 },
-    { name: "Lök", price: 5 }
-  ]
-};
+    { name: "Lök", price: 5 },
+    { name: "Rödlök", price: 6 },
+    { name: "Majs", price: 6 }
+  ],
+  "Dips & Såser": [
+  { name: "Guacamole", price: 10 },
+  { name: "Salsa mild", price: 8 },
+  { name: "Salsa stark", price: 8 },
+  { name: "Crème fraiche", price: 8 },
+  { name: "Yoghurt", price: 7 }
+ ],
 
-export const multiSelect = ["Grönsaker"];
+"Ost": [ 
+ { name: "Riven ost", price: 7 },
+ { name: "Cheddar", price: 9 },
+ { name: "Vegan ost", price: 9 }
+]};
+
+export const multiSelect = ["Grönsaker","Ost","Dips & Såser"];

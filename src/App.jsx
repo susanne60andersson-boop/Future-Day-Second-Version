@@ -18,6 +18,10 @@ export default function App() {
       case 4:
         return <StepCategory category="Grönsaker" next={5} {...taco} />;
       case 5:
+        return <StepCategory category="Ost" next={6} {...taco} />;
+      case 6:
+        return <StepCategory category="Dips & Såser" next={7} {...taco} />;
+      case 7:
         return <Summary {...taco} />;
       default:
         return null;
@@ -25,8 +29,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-200 to-red-300 p-4">
-      <div className="max-w-md mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-pink-200 to-red-300 p-6 md:p-10">
+      <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur rounded-3xl p-6 md:p-10 shadow-lg">
         <Header />
         {renderStep()}
       </div>
