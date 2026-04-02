@@ -1,3 +1,4 @@
+
 import { categories, multiSelect } from "../data/tacoData";
 
 export function StepCategory({ category, next, toggleItem, setStep, selected }) {
@@ -39,7 +40,7 @@ export function StepCategory({ category, next, toggleItem, setStep, selected }) 
           onClick={() => setStep(next)}
           className="w-full bg-purple-600 text-white py-3 text-lg rounded-full hover:bg-purple-700 transition"
         >
-          Nästa
+          Gå vidare
         </button>
       )}
     </div>

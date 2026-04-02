@@ -5,11 +5,15 @@ export function useTaco() {
   const [step, setStep] = useState(1);
   const [selected, setSelected] = useState([]);
   const [spice, setSpice] = useState(null);
+  const [delivery, setDelivery] = useState(null);
+  const [drink, setDrink] = useState(null);
 
   const reset = () => {
     setStep(1);
     setSelected([]);
     setSpice(null);
+    setDelivery(null);
+    setDrink(null);
   };
 
   const toggleItem = (category, item) => {
@@ -33,7 +37,7 @@ export function useTaco() {
     });
   };
 
-  const total = selected.reduce((sum, i) => sum + i.price, 0);
+  const total = selected.reduce((sum, i) => sum + i.price, 0) + (drink?.price ?? 0);
 
   return {
     step,
@@ -41,6 +45,10 @@ export function useTaco() {
     selected,
     spice,
     setSpice,
+    delivery,
+    setDelivery,
+    drink,
+    setDrink,
     toggleItem,
     total,
     reset
