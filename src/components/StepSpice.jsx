@@ -11,7 +11,7 @@ export function StepSpice({ setSpice, setStep }) {
             key={lvl}
             onClick={() => {
               setSpice(lvl);
-              setStep(2);
+              setStep(3);
             }}
             className="px-4 py-2 md:px-5 md:py-3 bg-white rounded-full border text-lg md:text-xl hover:bg-red-100 transition"
           >

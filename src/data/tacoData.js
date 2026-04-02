@@ -32,4 +32,12 @@ export const categories = {
  { name: "Vegan ost", price: 9 }
 ]};
 
+export const drinks = [
+  { name: "Vatten", price: 0 },
+  { name: "Cola", price: 25 },
+  { name: "Fanta Orange", price: 25 },
+  { name: "Sprite", price: 25 },
+  { name: "Lemonad", price: 30 }
+];
+
 export const multiSelect = ["Grönsaker","Ost","Dips & Såser"];

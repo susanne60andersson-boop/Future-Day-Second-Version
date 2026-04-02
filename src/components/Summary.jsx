@@ -1,4 +1,4 @@
-export function Summary({ selected, spice, total, reset }) {
+export function Summary({ selected, spice, drink, total, reset }) {
   return (
     <div className="space-y-3">
       <h2 className="text-2xl md:text-3xl font-bold">Din order</h2>
@@ -12,6 +12,12 @@ export function Summary({ selected, spice, total, reset }) {
       </div>
 
       <p className="text-lg">{"🌶️".repeat(spice)}</p>
+
+      {drink && (
+        <div className="rounded-lg bg-gray-50 px-3 py-1 text-lg md:text-xl">
+          🥤 {drink.name}
+        </div>
+      )}
 
       <h3 className="text-2xl font-bold">{total} kr</h3>
 
