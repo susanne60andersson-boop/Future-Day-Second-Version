@@ -13,7 +13,7 @@ export function StepDrink({ drink, setDrink, setStep }) {
               key={item.name}
               onClick={() => {
                 setDrink(item);
-                setStep(9);
+                setStep(10);
               }}
               className={`px-4 py-2 md:px-5 md:py-3 rounded-full border font-semibold text-lg transition ${
                 selected

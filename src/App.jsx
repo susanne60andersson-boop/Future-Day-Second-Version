@@ -26,8 +26,10 @@ export default function App() {
       case 7:
         return <StepCategory category="Dips & Såser" next={8} {...taco} />;
       case 8:
-        return <StepDrink {...taco} />;
+        return <StepCategory category="Frukt" next={9} {...taco} />;
       case 9:
+        return <StepDrink {...taco} />;
+      case 10:
         return <Summary {...taco} />;
       default:
         return null;
